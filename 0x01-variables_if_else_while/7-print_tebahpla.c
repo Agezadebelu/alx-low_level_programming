@@ -1,6 +1,6 @@
 /*
  * File: 7-print_tebahpla.c
- * Auth: Solomon Kassa
+ * Auth: Agez Debelu
  */
 
 #include <stdio.h>

@@ -1,6 +1,6 @@
 /*
  * File: 1-last_digit.c
- * Auth: Solomon Kassa
+ * Auth: Ageza Debelu
  */
 
 #include <stdlib.h>

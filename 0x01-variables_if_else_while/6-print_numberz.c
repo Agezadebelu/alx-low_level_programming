@@ -1,6 +1,6 @@
 /*
  * File: 8-print_base16.c
- * Auth: Solomon Kassa
+ * Auth: Ageza Debelu
  */
 
 #include <stdio.h>
