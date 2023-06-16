@@ -1,3 +1,8 @@
+/*
+ * File: 6-print_numberz.c
+ * Auth: Ageza Debelu
+ */
+
 #include <stdio.h>
 
 /**
