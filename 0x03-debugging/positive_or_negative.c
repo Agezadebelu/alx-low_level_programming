@@ -1,25 +1,11 @@
-/*
- * File: 0-positive_or_negative.c
- * Auth: Ageza Debelu
- */
-
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Prints a random number and states whether
- *        it is positive, negative, or zero.
- *
- * Return: Always 0.
-*/
-int main(void)
+ * main - Determines if umber is positive,negative or zero.
+(* 0 : is the number to be checked.
+ * Retur: 0 on success
+ */
+void positive_or_negative(int i)
 {
-	int i;
-
-	srand(time(0));
-	i = rand() - RAND_MAX / 2;
-
 	if (i > 0)
 		printf("%d is positive\n", i);
 	else if (i < 0)
@@ -27,5 +13,5 @@ int main(void)
 	else
 		printf("%d is zero\n", i);
 
-	return (0);
+	return;
 }
