@@ -35,30 +35,30 @@ listint_t **_ra(listint_t **list, size_t size, listint_t *new)
  *
  * Return: the number of nodes in the list
  */
-size_t free_listint_safe(listint_t **head)
+size_t free_listint_safe(listint_t **h)
 {
 	size_t i, num = 0;
 	listint_t **list = NULL;
 	listint_t *next;
 
-	if (head == NULL || *head == NULL)
+	if (h == NULL || *h == NULL)
 		return (num);
-	while (*head != NULL)
+	while (*h != NULL)
 	{
 		for (i = 0; i < num; i++)
 		{
-			if (*head == list[i])
+			if (*h == list[i])
 			{
-				*head = NULL;
+				*h = NULL;
 				free(list);
 				return (num);
 			}
 		}
 		num++;
-		list = _ra(list, num, *head);
-		next = (*head)->next;
-		free(*head);
-		*head = next;
+		list = _ra(list, num, *h);
+		next = (*h)->next;
+		free(*h);
+		*h = next;
 	}
 	free(list);
 	return (num);
